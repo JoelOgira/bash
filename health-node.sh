@@ -9,9 +9,13 @@
 ##############################
 
 set -x #debug mode
+set -e
+set -o
 
 df -h
 
 free -g
 
 nproc
+
+ps -ef | grep chrome | awk -F" " '{print $2}'
