@@ -5,3 +5,9 @@ for (let i = 0; i <= 50; i++) {
         console.log(i)
     }
 }
+
+let river = "mississippi"
+
+for (let i = 0; i < river.length; i++) {
+    console.log(river.includes("s")[ i ])
+}
